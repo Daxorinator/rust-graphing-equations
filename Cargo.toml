@@ -1,0 +1,14 @@
+[package]
+name = "graphing-equations"
+version = "0.0.1"
+authors = ["Seán Kelly <daxorinator@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+
+structopt = "0.2"
+
+[dependencies.tui]
+version = "0.4.0"
+default-features = false
+features = ['crossterm']
