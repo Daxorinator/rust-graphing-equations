@@ -47,7 +47,7 @@ fn main() -> Result<(), io::Error> {
     let xmin: f64 = xt - (range / 2f64);
     let xmax: f64 = xt + (range / 2f64);
 
-    let y1: f64 = ((a * (xt + d)) * (a * (xt + d))) + e;
+    let y1: f64 = ((a * (xmax + d)) * (a * (xt + d))) + e;
     let y2: f64 = ((a * (xmin + d)) * (a * (xmin + d))) + e;
 
     fn min(y1: f64, y2: f64) -> f64 {
